@@ -1,0 +1,176 @@
+2023-10-11 14:34:57 INFO ====== WebDriver manager ======
+2023-10-11 14:35:08 INFO Get LATEST chromedriver version for google-chrome
+2023-10-11 14:35:08 INFO Get LATEST chromedriver version for google-chrome
+2023-10-11 14:35:09 INFO There is no [mac64] chromedriver "117.0.5938.149" for browser google-chrome "117.0.5938" in cache
+2023-10-11 14:35:09 INFO Get LATEST chromedriver version for google-chrome
+2023-10-11 14:35:10 INFO WebDriver version 117.0.5938.149 selected
+2023-10-11 14:35:10 INFO Modern chrome version https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/117.0.5938.149/mac-x64/chromedriver-mac-x64.zip
+2023-10-11 14:35:10 INFO About to download new driver from https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/117.0.5938.149/mac-x64/chromedriver-mac-x64.zip
+2023-10-11 14:35:10 INFO Driver downloading response is 200
+2023-10-11 14:35:11 INFO Get LATEST chromedriver version for google-chrome
+2023-10-11 14:35:13 INFO Driver has been saved in cache [/Users/portable/.wdm/drivers/chromedriver/mac64/117.0.5938.149]
+2023-10-11 14:35:21 INFO Test 1 started
+2023-10-11 14:35:25 INFO Test2 Starting
+2023-10-11 14:35:27 INFO Test 3 Starting
+2023-10-11 14:35:38 ERROR Find element exception
+Traceback (most recent call last):
+  File "/Users/portable/Desktop/For leaning/HW_4_api/BaseApp.py", line 15, in find_element
+    element =  WebDriverWait(self.driver, time).until(EC.presence_of_element_located(locator),
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/selenium/webdriver/support/wait.py", line 95, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: Can't find element by locator ('xpath', '//*[@id="login"]/div[1]/label/input')
+Stacktrace:
+0   chromedriver                        0x00000001087b2018 chromedriver + 5042200
+1   chromedriver                        0x00000001087a9743 chromedriver + 5007171
+2   chromedriver                        0x0000000108350577 chromedriver + 447863
+3   chromedriver                        0x000000010839f349 chromedriver + 770889
+4   chromedriver                        0x000000010839f501 chromedriver + 771329
+5   chromedriver                        0x00000001083e5264 chromedriver + 1057380
+6   chromedriver                        0x00000001083c668d chromedriver + 931469
+7   chromedriver                        0x00000001083e2641 chromedriver + 1046081
+8   chromedriver                        0x00000001083c6433 chromedriver + 930867
+9   chromedriver                        0x0000000108391062 chromedriver + 712802
+10  chromedriver                        0x000000010839228e chromedriver + 717454
+11  chromedriver                        0x0000000108773db9 chromedriver + 4787641
+12  chromedriver                        0x0000000108778f6d chromedriver + 4808557
+13  chromedriver                        0x000000010877fec2 chromedriver + 4837058
+14  chromedriver                        0x0000000108779c9d chromedriver + 4811933
+15  chromedriver                        0x000000010874befc chromedriver + 4624124
+16  chromedriver                        0x0000000108798898 chromedriver + 4937880
+17  chromedriver                        0x0000000108798a50 chromedriver + 4938320
+18  chromedriver                        0x00000001087a937e chromedriver + 5006206
+19  libsystem_pthread.dylib             0x00007ff8066914e1 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80668cf6b thread_start + 15
+
+2023-10-11 14:35:38 ERROR Element ('xpath', '//*[@id="login"]/div[1]/label/input') not found
+2023-10-11 14:35:49 ERROR Find element exception
+Traceback (most recent call last):
+  File "/Users/portable/Desktop/For leaning/HW_4_api/BaseApp.py", line 15, in find_element
+    element =  WebDriverWait(self.driver, time).until(EC.presence_of_element_located(locator),
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/selenium/webdriver/support/wait.py", line 95, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: Can't find element by locator ('xpath', '//*[@id="login"]/div[2]/label/input')
+Stacktrace:
+0   chromedriver                        0x00000001087b2018 chromedriver + 5042200
+1   chromedriver                        0x00000001087a9743 chromedriver + 5007171
+2   chromedriver                        0x0000000108350577 chromedriver + 447863
+3   chromedriver                        0x000000010839f349 chromedriver + 770889
+4   chromedriver                        0x000000010839f501 chromedriver + 771329
+5   chromedriver                        0x00000001083e5264 chromedriver + 1057380
+6   chromedriver                        0x00000001083c668d chromedriver + 931469
+7   chromedriver                        0x00000001083e2641 chromedriver + 1046081
+8   chromedriver                        0x00000001083c6433 chromedriver + 930867
+9   chromedriver                        0x0000000108391062 chromedriver + 712802
+10  chromedriver                        0x000000010839228e chromedriver + 717454
+11  chromedriver                        0x0000000108773db9 chromedriver + 4787641
+12  chromedriver                        0x0000000108778f6d chromedriver + 4808557
+13  chromedriver                        0x000000010877fec2 chromedriver + 4837058
+14  chromedriver                        0x0000000108779c9d chromedriver + 4811933
+15  chromedriver                        0x000000010874befc chromedriver + 4624124
+16  chromedriver                        0x0000000108798898 chromedriver + 4937880
+17  chromedriver                        0x0000000108798a50 chromedriver + 4938320
+18  chromedriver                        0x00000001087a937e chromedriver + 5006206
+19  libsystem_pthread.dylib             0x00007ff8066914e1 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80668cf6b thread_start + 15
+
+2023-10-11 14:35:49 ERROR Element ('xpath', '//*[@id="login"]/div[2]/label/input') not found
+2023-10-11 14:35:59 ERROR Find element exception
+Traceback (most recent call last):
+  File "/Users/portable/Desktop/For leaning/HW_4_api/BaseApp.py", line 15, in find_element
+    element =  WebDriverWait(self.driver, time).until(EC.presence_of_element_located(locator),
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/selenium/webdriver/support/wait.py", line 95, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: Can't find element by locator ('xpath', '//*[@id="create-btn"]')
+Stacktrace:
+0   chromedriver                        0x00000001087b2018 chromedriver + 5042200
+1   chromedriver                        0x00000001087a9743 chromedriver + 5007171
+2   chromedriver                        0x0000000108350577 chromedriver + 447863
+3   chromedriver                        0x000000010839f349 chromedriver + 770889
+4   chromedriver                        0x000000010839f501 chromedriver + 771329
+5   chromedriver                        0x00000001083e5264 chromedriver + 1057380
+6   chromedriver                        0x00000001083c668d chromedriver + 931469
+7   chromedriver                        0x00000001083e2641 chromedriver + 1046081
+8   chromedriver                        0x00000001083c6433 chromedriver + 930867
+9   chromedriver                        0x0000000108391062 chromedriver + 712802
+10  chromedriver                        0x000000010839228e chromedriver + 717454
+11  chromedriver                        0x0000000108773db9 chromedriver + 4787641
+12  chromedriver                        0x0000000108778f6d chromedriver + 4808557
+13  chromedriver                        0x000000010877fec2 chromedriver + 4837058
+14  chromedriver                        0x0000000108779c9d chromedriver + 4811933
+15  chromedriver                        0x000000010874befc chromedriver + 4624124
+16  chromedriver                        0x0000000108798898 chromedriver + 4937880
+17  chromedriver                        0x0000000108798a50 chromedriver + 4938320
+18  chromedriver                        0x00000001087a937e chromedriver + 5006206
+19  libsystem_pthread.dylib             0x00007ff8066914e1 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80668cf6b thread_start + 15
+
+2023-10-11 14:36:05 INFO Test 4 Starting
+2023-10-11 14:36:16 ERROR Find element exception
+Traceback (most recent call last):
+  File "/Users/portable/Desktop/For leaning/HW_4_api/BaseApp.py", line 15, in find_element
+    element =  WebDriverWait(self.driver, time).until(EC.presence_of_element_located(locator),
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/selenium/webdriver/support/wait.py", line 95, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: Can't find element by locator ('xpath', '//*[@id="login"]/div[1]/label/input')
+Stacktrace:
+0   chromedriver                        0x00000001087b2018 chromedriver + 5042200
+1   chromedriver                        0x00000001087a9743 chromedriver + 5007171
+2   chromedriver                        0x0000000108350577 chromedriver + 447863
+3   chromedriver                        0x000000010839f349 chromedriver + 770889
+4   chromedriver                        0x000000010839f501 chromedriver + 771329
+5   chromedriver                        0x00000001083e5264 chromedriver + 1057380
+6   chromedriver                        0x00000001083c668d chromedriver + 931469
+7   chromedriver                        0x00000001083e2641 chromedriver + 1046081
+8   chromedriver                        0x00000001083c6433 chromedriver + 930867
+9   chromedriver                        0x0000000108391062 chromedriver + 712802
+10  chromedriver                        0x000000010839228e chromedriver + 717454
+11  chromedriver                        0x0000000108773db9 chromedriver + 4787641
+12  chromedriver                        0x0000000108778f6d chromedriver + 4808557
+13  chromedriver                        0x000000010877fec2 chromedriver + 4837058
+14  chromedriver                        0x0000000108779c9d chromedriver + 4811933
+15  chromedriver                        0x000000010874befc chromedriver + 4624124
+16  chromedriver                        0x0000000108798898 chromedriver + 4937880
+17  chromedriver                        0x0000000108798a50 chromedriver + 4938320
+18  chromedriver                        0x00000001087a937e chromedriver + 5006206
+19  libsystem_pthread.dylib             0x00007ff8066914e1 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80668cf6b thread_start + 15
+
+2023-10-11 14:36:16 ERROR Element ('xpath', '//*[@id="login"]/div[1]/label/input') not found
+2023-10-11 14:36:26 ERROR Find element exception
+Traceback (most recent call last):
+  File "/Users/portable/Desktop/For leaning/HW_4_api/BaseApp.py", line 15, in find_element
+    element =  WebDriverWait(self.driver, time).until(EC.presence_of_element_located(locator),
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/selenium/webdriver/support/wait.py", line 95, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: Can't find element by locator ('xpath', '//*[@id="login"]/div[2]/label/input')
+Stacktrace:
+0   chromedriver                        0x00000001087b2018 chromedriver + 5042200
+1   chromedriver                        0x00000001087a9743 chromedriver + 5007171
+2   chromedriver                        0x0000000108350577 chromedriver + 447863
+3   chromedriver                        0x000000010839f349 chromedriver + 770889
+4   chromedriver                        0x000000010839f501 chromedriver + 771329
+5   chromedriver                        0x00000001083e5264 chromedriver + 1057380
+6   chromedriver                        0x00000001083c668d chromedriver + 931469
+7   chromedriver                        0x00000001083e2641 chromedriver + 1046081
+8   chromedriver                        0x00000001083c6433 chromedriver + 930867
+9   chromedriver                        0x0000000108391062 chromedriver + 712802
+10  chromedriver                        0x000000010839228e chromedriver + 717454
+11  chromedriver                        0x0000000108773db9 chromedriver + 4787641
+12  chromedriver                        0x0000000108778f6d chromedriver + 4808557
+13  chromedriver                        0x000000010877fec2 chromedriver + 4837058
+14  chromedriver                        0x0000000108779c9d chromedriver + 4811933
+15  chromedriver                        0x000000010874befc chromedriver + 4624124
+16  chromedriver                        0x0000000108798898 chromedriver + 4937880
+17  chromedriver                        0x0000000108798a50 chromedriver + 4938320
+18  chromedriver                        0x00000001087a937e chromedriver + 5006206
+19  libsystem_pthread.dylib             0x00007ff8066914e1 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80668cf6b thread_start + 15
+
+2023-10-11 14:36:26 ERROR Element ('xpath', '//*[@id="login"]/div[2]/label/input') not found
+2023-10-11 14:36:34 INFO Test 5 Starting
+2023-10-11 14:36:36 INFO Test 6 Starting

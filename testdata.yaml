@@ -1,0 +1,17 @@
+address: https://test-stand.gb.ru
+browser: chrome
+sleep_time: 1
+login: KatrinzZZ
+password: 284ac1db73
+title: Check Text Post
+
+name: user_1
+content: hello
+email: user@mail.ru
+
+fromaddr_report: styardess@mail.ru
+toaddr_report: styardess@mail.ru
+mail_password: Tzy3fCuqgkRpT652h4C8
+
+url_login: "https://test-stand.gb.ru/gateway/login"
+url_posts: "https://test-stand.gb.ru/api/posts"
